@@ -1,5 +1,5 @@
 import tkinter as tk
-from tkinter import ttk, messagebox, simpledialog
+from tkinter import ttk, messagebox
 import tkinter.font as tkFont
 
 # ===== DONNEES GLOBALES =====
