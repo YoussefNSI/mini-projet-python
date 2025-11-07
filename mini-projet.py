@@ -7,7 +7,7 @@ trains = {
     'TUN-MAD': {'places_total': 4, 'places_restantes': 4, 'passagers': set()},
 }
 
-#Liste pour stocker les tickets générés
+# Liste pour stocker les tickets générés
 tickets = []
 
 
