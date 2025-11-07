@@ -44,7 +44,7 @@ class AppReservationTrains:
         
         title = tk.Label(
             header,
-            text="🚆 SYSTÈME DE RÉSERVATION DE TRAINS 🚆",
+            text="SYSTÈME DE RÉSERVATION DE TRAINS",
             font=self.title_font,
             bg=self.header_color,
             fg="white",
@@ -119,7 +119,7 @@ class AppReservationTrains:
         
         btn_refresh = tk.Button(
             btn_frame,
-            text="🔄 Rafraîchir",
+            text="Rafraîchir",
             command=self.refresh_trains_tab,
             bg=self.button_color,
             fg="white",
@@ -141,7 +141,7 @@ class AppReservationTrains:
         for code_trajet, info in trains.items():
             places_restantes = info['places_restantes']
             places_total = info['places_total']
-            statut = "✅ Disponible" if places_restantes > 0 else "❌ COMPLET"
+            statut = "Disponible" if places_restantes > 0 else "COMPLET"
             
             self.trains_tree.insert(
                 "",
@@ -211,7 +211,7 @@ class AppReservationTrains:
         
         btn = tk.Button(
             btn_frame,
-            text="✅ Confirmer la Réservation",
+            text="Confirmer la Réservation",
             command=self.reserver_place,
             bg=self.success_color,
             fg="white",
@@ -272,7 +272,7 @@ class AppReservationTrains:
         
         # Afficher le résultat
         resultat = f"""
-✅ RÉSERVATION CONFIRMÉE !
+ RÉSERVATION CONFIRMÉE !
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 Passager : {nom_passager}
@@ -354,7 +354,7 @@ Places restantes : {trains[code_trajet]['places_restantes']}/{trains[code_trajet
         
         btn = tk.Button(
             btn_frame,
-            text="❌ Annuler la Réservation",
+            text="Annuler la Réservation",
             command=self.annuler_reservation,
             bg=self.error_color,
             fg="white",
@@ -401,7 +401,7 @@ Places restantes : {trains[code_trajet]['places_restantes']}/{trains[code_trajet
         
         # Afficher le résultat
         resultat = f"""
-✅ ANNULATION CONFIRMÉE !
+ANNULATION CONFIRMÉE !
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 Passager : {nom_passager}
@@ -539,7 +539,7 @@ Places restantes : {trains[code_trajet]['places_restantes']}/{trains[code_trajet
         
         btn_refresh = tk.Button(
             btn_frame,
-            text="🔄 Rafraîchir",
+            text="Rafraîchir",
             command=self.refresh_complets_tab,
             bg=self.button_color,
             fg="white",
@@ -614,7 +614,7 @@ Places restantes : {trains[code_trajet]['places_restantes']}/{trains[code_trajet
         
         btn_refresh = tk.Button(
             btn_frame,
-            text="🔄 Rafraîchir",
+            text="Rafraîchir",
             command=self.refresh_tickets_tab,
             bg=self.button_color,
             fg="white",
