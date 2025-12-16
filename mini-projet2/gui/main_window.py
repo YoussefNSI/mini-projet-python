@@ -53,7 +53,7 @@ class MainWindow(QMainWindow):
         super().__init__()
         
         # Initialiser le système
-        self.system = CarRentalSystem("AutoLoc Premium")
+        self.system = CarRentalSystem("ShopTaLoc31 Premium")
         
         # Charger les données de démonstration
         self.load_demo_data()
@@ -66,7 +66,7 @@ class MainWindow(QMainWindow):
     
     def setup_ui(self):
         """Configure l'interface principale."""
-        self.setWindowTitle("AutoLoc - Systeme de Location de Voitures")
+        self.setWindowTitle("ShopTaLoc31 - Systeme de Location de Voitures")
         self.setMinimumSize(1200, 800)
         
         # Icône de la fenêtre
@@ -106,7 +106,7 @@ class MainWindow(QMainWindow):
         logo_icon.setFixedSize(40, 40)
         
         logo_text_layout = QVBoxLayout()
-        logo_label = QLabel("AutoLoc")
+        logo_label = QLabel("ShopTaLoc31")
         logo_label.setStyleSheet("color: #ffffff; font-size: 20px; font-weight: 700;")
         
         subtitle_label = QLabel("Gestion de Location")

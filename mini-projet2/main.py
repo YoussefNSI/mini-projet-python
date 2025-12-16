@@ -33,7 +33,7 @@ def launch_gui():
         
         # Créer l'application
         app = QApplication(sys.argv)
-        app.setApplicationName("AutoLoc Premium")
+        app.setApplicationName("ShopTaLoc31 Premium")
         app.setOrganizationName("IRA3")
         app.setStyleSheet(get_full_stylesheet())
         
@@ -90,7 +90,7 @@ def launch_console():
     print("=" * 60)
     
     # Créer le système
-    system = CarRentalSystem("AutoLoc Premium")
+    system = CarRentalSystem("ShopTaLoc31 Premium")
     
     # Créer les données de démonstration
     print("\n[...] Creation des donnees de demonstration...")
@@ -473,7 +473,7 @@ def main():
     """Fonction principale - Point d'entrée de l'application."""
     
     parser = argparse.ArgumentParser(
-        description="Système de Location de Véhicules - AutoLoc Premium",
+        description="Système de Location de Véhicules - ShopTaLoc31 Premium",
         add_help=False
     )
     

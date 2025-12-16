@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Point d'entrée de l'interface graphique AutoLoc.
+Point d'entrée de l'interface graphique ShopTaLoc31.
 """
 
 import sys
@@ -19,8 +19,8 @@ def main():
     app.setFont(font)
     
     # Nom de l'application
-    app.setApplicationName("AutoLoc")
-    app.setOrganizationName("AutoLoc Inc.")
+    app.setApplicationName("ShopTaLoc31")
+    app.setOrganizationName("ShopTaLoc31 Inc.")
     
     # Créer et afficher la fenêtre principale
     window = MainWindow()

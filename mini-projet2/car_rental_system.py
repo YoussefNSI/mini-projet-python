@@ -23,7 +23,7 @@ class CarRentalSystem:
     - Génération de rapports
     """
     
-    def __init__(self, agency_name: str = "AutoLoc"):
+    def __init__(self, agency_name: str = "ShopTaLoc31"):
         self._agency_name = agency_name
         self._vehicles: Dict[str, Vehicle] = {}
         self._customers: Dict[str, Customer] = {}
@@ -34,7 +34,7 @@ class CarRentalSystem:
     
     def add_vehicle(self, vehicle: Vehicle) -> bool:
         """
-        Ajoute un véhicule à la flotte.
+        Ajoute un véhicule à la flotte
         
         Args:
             vehicle: Le véhicule à ajouter
