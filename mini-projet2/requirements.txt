@@ -1,0 +1,4 @@
+# Dépendances du projet
+pytest>=7.0.0
+PyQt6>=6.4.0
+pytest-cov>=4.0.0
